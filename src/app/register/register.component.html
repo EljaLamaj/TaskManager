@@ -1,0 +1,23 @@
+<form>
+    <h1>Krijo nje llogari</h1>
+<div  class="mb-3">
+    <label class="form-label">Emri</label>
+    <input class="form-control"[ngModelOptions]="{standalone: true}" [(ngModel)]="registerForm.name"   type="text">
+</div>
+<div class="mb-3">
+    <label class="form-label">Mbiemri</label>
+    <input class="form-control"[ngModelOptions]="{standalone: true}" [(ngModel)]="registerForm.surname"   type="text">
+</div>
+<div class="mb-3">
+    <label class="form-label"> Email</label>
+    <input class="form-control" [ngModelOptions]="{standalone: true}"  [(ngModel)]="registerForm.email" type="email">
+</div>
+<div class="mb-3">
+    <label class="form-label">Password</label>
+    <input class="form-control"[ngModelOptions]="{standalone: true}"   [(ngModel)]="registerForm.password" type="password">
+</div>
+<div class="mb-3"> 
+<button click class="btn btn-primary">Submit
+</button>
+</div>
+</form>
